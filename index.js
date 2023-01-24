@@ -4,7 +4,7 @@ const cors = require("cors");
 const userRouter = require('./users/user.router')
 const jobsRouter = require('./jobs/jobs.router')
 
-let port = 8080;
+let port = process.env.PORT || 8080;
 
 
 const app = express();
